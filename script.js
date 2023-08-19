@@ -8,6 +8,11 @@ previewImg = document.querySelector(".preview img"),
 resetFilterBtn = document.querySelector(".reset"),
 chooseImgBtn = document.querySelector(".choose-img"),
 saveImgBtn = document.querySelector(".save-img");
+filterSlider.addEventListener("input", updateFilter);
+resetFilterBtn.addEventListener("click", resetFilter);
+saveImgBtn.addEventListener("click", saveImage);
+fileInput.addEventListener("change", loadImage);
+chooseImgBtn.addEventListener("click", () => fileInput.click());
 
 let brightness = "100", saturation = "100", inversion = "0", grayscale = "0";
 let rotate = 0, flipHorizontal = 1, flipVertical = 1;
