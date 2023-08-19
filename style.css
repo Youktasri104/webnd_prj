@@ -191,7 +191,7 @@ body{
   }
 
   .filter .slider .info{
-
+    display: flex;
     color: #acacac;
     font-size: 20px;
     justify-content: space-between;
